@@ -18,12 +18,14 @@ Some examples of **GUID**s created using a **centralized** registry are:
 * the Internet domain name system (if you include time),
 * phone numbers (if you include time).
 
-They can work.
+They can sometimes work.
 
-It is possible for them to be more space-efficient.
+It is possible for them to be more space-efficient (if their designers choose to take design them to be space-efficient).
 
 But they also have major problems if you are not in total control over the registry.
-For example — your **GUID** can be taken from you, or censored.
+For example — your **GUID** can be taken from you, or censored, etc.
+
+And in many contexts this _major problem_ with **centralized** **GUID**s makes them completely unacceptable to be used.
 
 ## UUID
 
