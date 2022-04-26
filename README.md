@@ -10,30 +10,66 @@ This is a **guide** on **universally unique identifier**, which is usually short
 
 Overview
 
-1. Introduction
-2. Version
-3. Variant
-4. Random
-5. Chrono Random
+1. [Introduction](chapters/introduction/README.md)
+2. [Version](chapters/version/README.md)
+3. [Variant](chapters/variant/README.md)
+4. [Random](chapters/random/README.md)
 
 Programming
 
-4. Generating
-5. Git Repository
-6. Type
-7. Create
-8. Unit Tests for Create
-9. fmt.Stringer
-10. Unit Tests for fmt.Stringer
-11. Random
-12. Unit Tests for Random
-13. Chrono Random
-14. Unit Tests for Chrono Random
-15. encoding.TextMarshaler
-16. Unit Tests for encoding.Textmarshaler
-17. encoding.TextUnmarshaler
-18. Unit Tests for encoding.TextUnmarshaler
-19. encoding.BinaryMarshaler
-20. Unit Tests for encoding.BinaryMarshaler
-21. encoding.BinaryUnmarshaler
-22. Unit Tests for encoding.BinaryUnmarshaler
+5. Generating
+6. [Git Repository](chapters/git-repository/README.md)
+7. [Type](chapters/type/README.md)
+8. [uuid.Create()](chapters/function-create/READMEmd)
+9. [Unit Tests for uuid.Create()](chapters/function-create-unit-tests/README.md)
+10. fmt.Stringer
+11. Unit Tests for fmt.Stringer
+12. [uuid.Random()](chapters/function-random/README.md)
+13. [Unit Tests for uuid.Random()](chapters/function-random/unit-tests/README.md)
+
+Project
+
+14. uuid Program
+
+Overview
+
+15. Chrono Random
+
+Programming
+
+16. [uuid.ChronoRandom()](chapters/function-chronorandom/README.md)
+17. [Unit Tests for uuid.ChronoRandom()](chapters/function-chronorandom-unit-tests/README.md)
+
+Project
+
+18. uuid Program
+
+Overview
+
+19. [Binary](chapters/binary/README.md)
+
+Programming
+
+20. encoding.BinaryMarshaler
+21. Unit Tests for encoding.BinaryMarshaler
+22. encoding.BinaryUnmarshaler
+23. Unit Tests for encoding.BinaryUnmarshaler
+
+Project
+
+24. uuid Program
+
+Overview
+
+25. Binary-To-Text Encoding
+
+Programming
+
+26. encoding.TextMarshaler
+27. Unit Tests for encoding.Textmarshaler
+28. encoding.TextUnmarshaler
+29. Unit Tests for encoding.TextUnmarshaler
+
+Project
+
+30. uuid Program
