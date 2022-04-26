@@ -25,13 +25,16 @@ The application could use a lot of different types of IDs for this.
 But, an application might choose to use **UUID**s for its ID:
 
 
-| ID                                   | Family Name | Given Name | Additional Names | Phone Number |
-|--------------------------------------|-------------|------------|------------------|--------------|
-| 9d49ff7d-186e-4bcb-8e75-534b8948b92f | Blow        | Joe        |                  | +16045555555 |
-| d79d3ca5-49af-42a7-8565-477d2a91c95b | Doe         | Jane       |                  | +17781234567 |
-| 29912c93-9671-424d-b633-b1bf2cd24c9c | Doe         | John       |                  | +17783456789 |
-| 7a64d432-0ef8-45b4-9055-531f2b78b99e | Doe         | John       | Tiberius         | +12141212121 |
+| ID                                     | Family Name | Given Name | Additional Names | Phone Number |
+|----------------------------------------|-------------|------------|------------------|--------------|
+| `9d49ff7d-186e-4bcb-8e75-534b8948b92f` | Blow        | Joe        |                  | +16045555555 |
+| `d79d3ca5-49af-42a7-8565-477d2a91c95b` | Doe         | Jane       |                  | +17781234567 |
+| `29912c93-9671-424d-b633-b1bf2cd24c9c` | Doe         | John       |                  | +17783456789 |
+| `7a64d432-0ef8-45b4-9055-531f2b78b99e` | Doe         | John       | Tiberius         | +12141212121 |
 
 So, in this example, `9d49ff7d-186e-4bcb-8e75-534b8948b92f` is a nickname that the application uses for _Joe Blow_.
 And `d79d3ca5-49af-42a7-8565-477d2a91c95b` is a nickname for _Jane Dow_.
 Etc.
+
+The user of the contact list application would likely never see these **UUID** nicknames.
+But they are there, and covertly being used behind the scenes.
