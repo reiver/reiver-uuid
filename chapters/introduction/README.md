@@ -36,12 +36,6 @@ The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` fo
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
-## Semiotics
-
-If you are already aware of the jargon used in **semiotics** then, **UUID**s are **semiotic** **symbol**.
-
-If that (stuff about **semiotics**) doesn't mean anything to you, then just ignore it, and keep on reading.
-
 ## GUID
 
 There are other conventions for creating **globally unique identifiers** (**GUID**s) too, that are _not_ **UUID**s.
