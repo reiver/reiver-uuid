@@ -28,6 +28,43 @@ The useful thing about the `ea35427e-c39f-11ec-9d64-0242ac120002` format is that
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
+## Usages
+
+People use UUIDs for all sorts of things.
+
+But most of these uses involves a computer using a **UUID** as a type of globally unique **nickname** for something.
+
+For example, imagine that on my phone I have an application that stores and manages my contacts. Maybe this is what is in my contact list:
+
+| Family Name | Given Name | Additional Names | Phone Number |
+|-------------|------------|------------------|--------------|
+| Blow        | Joe        |                  | +16045555555 |
+| Doe         | Jane       |                  | +17781234567 |
+| Doe         | John       |                  | +17783456789 |
+| Doe         | John       | Tiberius         | +12141212121 |
+
+Internally the application secretly creates an ID for each entry in the contact list.
+
+The application could use a lot of different types of IDs for this.
+
+But, an application might choose to use **UUID**s for its ID:
+
+
+| ID                                   | Family Name | Given Name | Additional Names | Phone Number |
+|--------------------------------------|-------------|------------|------------------|--------------|
+| 9d49ff7d-186e-4bcb-8e75-534b8948b92f | Blow        | Joe        |                  | +16045555555 |
+| d79d3ca5-49af-42a7-8565-477d2a91c95b | Doe         | Jane       |                  | +17781234567 |
+| 29912c93-9671-424d-b633-b1bf2cd24c9c | Doe         | John       |                  | +17783456789 |
+| 7a64d432-0ef8-45b4-9055-531f2b78b99e | Doe         | John       | Tiberius         | +12141212121 |
+
+So, in this example, `9d49ff7d-186e-4bcb-8e75-534b8948b92f` is a nickname that the application uses for _Joe Blow_.
+
+## Semiotics
+
+If you are already aware of the jargon used in **semiotics** then, **UUID**s are **semiotic** **symbols**.
+
+If that (stuff about **semiotics**) doesn't mean anything to you, just ignore it, and keep on reading.
+
 ## GUID
 
 There are other conventions for creating **globally unique identifiers** (**GUID**s) too, that are _not_ **UUID**s.
