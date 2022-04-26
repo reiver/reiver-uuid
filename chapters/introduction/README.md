@@ -6,6 +6,8 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 **UUID** (short for **universally unique identifier**) is a popular convention for creating **globally unique identifiers** (**GUID**s).
 
+(If you aren't sure what a **globally unique identifier** (**GUID**) is yet, we will go into that more later.)
+
 Often, when **UUID**s are written, they look like these:
 
 * `ea35427e-c39f-11ec-9d64-0242ac120002`
@@ -34,7 +36,7 @@ People use UUIDs for all sorts of things.
 
 But most of these uses involves a computer using a **UUID** as a type of globally unique **nickname** for something.
 
-For example, imagine that on my phone I have an application that stores and manages my contacts. Maybe this is what is in my contact list:
+So, for example, imagine that on my phone I have an application that stores and manages my contacts. Maybe this is what is in my contact list:
 
 | Family Name | Given Name | Additional Names | Phone Number |
 |-------------|------------|------------------|--------------|
@@ -43,10 +45,9 @@ For example, imagine that on my phone I have an application that stores and mana
 | Doe         | John       |                  | +17783456789 |
 | Doe         | John       | Tiberius         | +12141212121 |
 
-Internally the application secretly creates an ID for each entry in the contact list.
+Internally the application secretly creates an _indentifier_ (_ID_) for each entry in the contact list.
 
 The application could use a lot of different types of IDs for this.
-
 But, an application might choose to use **UUID**s for its ID:
 
 
@@ -58,12 +59,14 @@ But, an application might choose to use **UUID**s for its ID:
 | 7a64d432-0ef8-45b4-9055-531f2b78b99e | Doe         | John       | Tiberius         | +12141212121 |
 
 So, in this example, `9d49ff7d-186e-4bcb-8e75-534b8948b92f` is a nickname that the application uses for _Joe Blow_.
+And `d79d3ca5-49af-42a7-8565-477d2a91c95b` is a nickname for __Jane Dow_.
+Etc.
 
 ## Semiotics
 
-If you are already aware of the jargon used in **semiotics** then, **UUID**s are **semiotic** **symbols**.
+If you are already aware of the jargon used in **semiotics** then, **UUID**s are **semiotic** **symbol**.
 
-If that (stuff about **semiotics**) doesn't mean anything to you, just ignore it, and keep on reading.
+If that (stuff about **semiotics**) doesn't mean anything to you, then just ignore it, and keep on reading.
 
 ## GUID
 
@@ -71,13 +74,19 @@ There are other conventions for creating **globally unique identifiers** (**GUID
 (You can even make up your own convention.) 
 But in this **guide** we will focus on **UUID**s.
 
+An **identifier** (**ID**) being **globally unique** means that it will be unique everywhere, and across time! That is strong property!
+
+If you create a GUID today, and I create one tomorrow, they will be different.
+If someone else creates one 100 years from now, it will also be different than both of the ones we created.
+Etc.
+
 ## LUID
 
 A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.
 
-An example of a **locally unique identifier** is a _primary-key_ in a database table. For example in Postgres it would be positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc. Within a single table these are unique. But other tables might also use those exact same alues for its own _primary-keys_.
+An example of a **locally unique identifier** is a _primary-key_ in a database table. For example in Postgres _primary-keys_ often value positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc. Within a single table these are unique. But other tables might also use those exact same alues for its own _primary-keys_.
 
-**UUID**s are NOT **locally unique identifiers**, they are **globally unique identifiers**.
+**UUID**s are NOT **locally unique identifiers** (**LUID**), they are **globally unique identifiers** (**GUID**).
 If they were used for _primary-keys_ of database tables, they would be unique everywhere, with every database in the universe, and across time.
 
 ## Distributed GUID versus Centralized GUID
