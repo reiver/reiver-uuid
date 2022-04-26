@@ -36,20 +36,6 @@ The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` fo
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
-## GUID
-
-There are other conventions for creating **globally unique identifiers** (**GUID**s) too, that are _not_ **UUID**s.
-(You can even make up your own convention.) 
-But in this **guide** we will focus on **UUID**s.
-
-An **identifier** (**ID**) being **globally unique** means that it will be unique everywhere, and across time! That is strong property!
-
-If you create a GUID today, and I create one tomorrow, they will be different.
-If someone else creates one 100 years from now, it will also be different than both of the ones we created.
-Etc.
-
-⚠️ Note that I feel that there are better conventions for creating **GUID**s than **UUID**s (for reasons that will hopefully become more obvious as you work through this guide). But nevertheless, you will very likely come across **UUID**s, and it would be to your benefit to understand them.
-
 ## LUID
 
 A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier** (**LUID**).
