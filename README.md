@@ -11,9 +11,16 @@ This is a **guide** on **universally unique identifier**, which is usually short
 Overview
 
 1. [Introduction](chapters/introduction/README.md)
-2. [Version](chapters/version/README.md)
-3. [Variant](chapters/variant/README.md)
-4. [Random](chapters/random/README.md)
+2. [Usages](chapters/usages/README.md)
+3. [Semiotics](chapters/semiotics/README.md)
+4. [GUID](chapters/guid/README.md)
+5. [LUID](chapters/luid/README.md)
+6. [Centralized GUID](chapters/centralized-guid/README.md)
+7. [Distributed GUID](chapters/distributed-guid/README.md)
+8. [Bit Meaning](chapters/bit-meaing/README.md)
+9. [Version](chapters/version/README.md)
+10. [Variant](chapters/variant/README.md)
+11. [Random](chapters/random/README.md)
 
 Programming
 
