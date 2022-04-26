@@ -26,6 +26,8 @@ You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002
 
 The useful thing about the `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
 
+And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
+
 ## GUID
 
 There are other conventions for creating **globally unique identifiers** (**GUID**s) too, that are _not_ **UUID**s.
