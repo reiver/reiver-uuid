@@ -59,7 +59,7 @@ But, an application might choose to use **UUID**s for its ID:
 | 7a64d432-0ef8-45b4-9055-531f2b78b99e | Doe         | John       | Tiberius         | +12141212121 |
 
 So, in this example, `9d49ff7d-186e-4bcb-8e75-534b8948b92f` is a nickname that the application uses for _Joe Blow_.
-And `d79d3ca5-49af-42a7-8565-477d2a91c95b` is a nickname for __Jane Dow_.
+And `d79d3ca5-49af-42a7-8565-477d2a91c95b` is a nickname for _Jane Dow_.
 Etc.
 
 ## Semiotics
@@ -84,12 +84,62 @@ Etc.
 
 ## LUID
 
-A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.
+A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier** (**LUID**).
 
-An example of a **locally unique identifier** is a _primary-key_ in a database table. For example in Postgres _primary-keys_ often value positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc. Within a single table these are unique. But other tables might also use those exact same alues for its own _primary-keys_.
+An example of a **locally unique identifier** is a _primary-key_ in a database table. For example in Postgres _primary-keys_ often have positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc. Within a single table these are unique. But other tables might also use those exact same alues for its own _primary-keys_.
+
+For example, imagine you have a `users` table that uses positive integer **LUID**s like so:
+
+| ID  | username     |
+|-----|--------------|
+| `1` | joeblow      |
+| `2` | janedoe      |
+| `3` | johndoe      |
+| `4` | hjsimpson    |
+| `5` | brucebanner  |
+
+And also, for example, imagine you have a `products` table that uses positive integer **LUIDs** like so:
+
+| ID   | name     | price |
+|------|----------|-------|
+| `1`  | Skeletor | $14   |
+| `2`  | Panthor  | $19   |
+| `3`  | Moss-Man | $14   |
+| `4`  | Webstor  | $14   |
+| `5`  | Spikes   | $14   |
+
+**ID** `1` is a nickname for `joeblow` in the `users` table, but **ID** `1` is also a nickname for `Skeletor` in the `products` table.
+
+The same **ID**s are used in both tables, and have different means in each table.
+
+If I just told you the **ID** is `5`, you wouldn't know if I'm referring to `brucebanner` or `Spikes`, unless I also told you which table I was referring to.
 
 **UUID**s are NOT **locally unique identifiers** (**LUID**), they are **globally unique identifiers** (**GUID**).
 If they were used for _primary-keys_ of database tables, they would be unique everywhere, with every database in the universe, and across time.
+
+So, for example, imagine you have a `users` table that uses **UUID** **GUID**s like so:
+
+| ID                                     | username     |
+|----------------------------------------|--------------|
+| `37bd2273-f442-4520-b2f7-7402eaab36c2` | joeblow      |
+| `0b2bb6fb-27d4-49c6-8aad-304c015e1df5` | janedoe      |
+| `a1192fd5-1fef-4054-8c44-5cf71e217283` | johndoe      |
+| `84e60040-0f74-4a2a-9451-d068aa260c9d` | hjsimpson    |
+| `8cff54ab-d888-4613-8363-dc264ff2937f` | brucebanner  |
+
+And also, for example, imagine you have a `products` table that uses **UUID** **GUIDs** like so:
+
+| ID                                     | name     | price |
+|----------------------------------------|----------|-------|
+| `39bf9f7d-00ce-41e2-8645-75ffd4f65458` | Skeletor | $14   |
+| `496bb0fe-2957-4d52-b48c-56e7fcb0c9e9` | Panthor  | $19   |
+| `5b3a831c-9d64-42ad-82e4-fb734599bbda` | Moss-Man | $14   |
+| `25197b99-655e-430c-9446-e991a874870f` | Webstor  | $14   |
+| `dd001ac2-0c65-4b06-8a8a-8b98097b634f` | Spikes   | $14   |
+
+If I just told you the ID is `dd001ac2-0c65-4b06-8a8a-8b98097b634f`, you wouldn't need me to tell you which table I was referring to, since it is a **GUID**. You would know just with that information that I was referring to the `products` table, and in particular, I was referring to `Spikes`.
+
+**UUID**s are **GUID**s (_not_ **LUID**s).
 
 ## Distributed GUID versus Centralized GUID
 
