@@ -4,7 +4,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-**UUID** (short for **universally unique identifier**) is a popular convention for creating **globally unique identifiers** (**GUID**s).
+**UUID**, short for **universally unique identifier**, is a popular convention for creating **globally unique identifiers** (**GUID**s).
 
 (If you aren't sure what a **globally unique identifier** (**GUID**) is yet, we will go into that more later.)
 
