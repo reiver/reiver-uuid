@@ -35,3 +35,5 @@ You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002
 The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
+
+Although hopefully when a **UUID** is being stored — it is being story efficiently as **128-bits** of data (rather than a string of its **canonical** form). (Which could, with some programming languages, be an array with 16 8-bit bytes.)
