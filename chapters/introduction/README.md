@@ -80,6 +80,8 @@ If you create a GUID today, and I create one tomorrow, they will be different.
 If someone else creates one 100 years from now, it will also be different than both of the ones we created.
 Etc.
 
+⚠️ Note that I feel that there are better conventions for creating **GUID**s than **UUID**s (for reasons that will hopefully become more obvious as you work through this guide). But nevertheless, you will very likely come across **UUID**s, and it would be to your benefit to understand them.
+
 ## LUID
 
 A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.
