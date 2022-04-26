@@ -41,7 +41,7 @@ There are two main strategies for creating a **GUID**:
 
 **UUID**s are a set of strategies for creating distributed **GUID**s.
 
-# Meaning
+## Meaning
 
 Some bit ranges within the **128-bits** of a **UUID** have specific meanings. For example:
 
@@ -104,5 +104,14 @@ It can help to look at the “N”` nibble in binary to understand this better �
 ```
 NNNx
 ```
+
+Here is are some of the different types of variants that currently exist:
+
+| Variant Name | Binary Value |
+|--------------|--------------|
+| RFC 4122     | 0b100        |
+| Microsoft    | 0b110        |
+| Future       | 0b111        |
+
 
 
