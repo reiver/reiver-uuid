@@ -26,18 +26,24 @@ You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002
 
 The useful thing about the `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
 
-
 ## GUID
 
 There are other conventions for creating **globally unique identifiers** (**GUID**s) too, that are _not_ **UUID**s.
 (You can even make up your own convention.) 
 But in this **guide** we will focus on **UUID**s.
 
-(A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.)
+A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.
 
+There are two main strategies for creating a **GUID**:
 
+* distributed, and
+* centralized.
 
-Some bit ranges within the **128-bits** have specific meanings. For example:
+**UUID**s are a set of strategies for creating distributed **GUID**s.
+
+# Meaning
+
+Some bit ranges within the **128-bits** of a **UUID** have specific meanings. For example:
 
 ```
 xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
@@ -99,4 +105,4 @@ It can help to look at the “N”` nibble in binary to understand this better �
 NNNx
 ```
 
----
+
