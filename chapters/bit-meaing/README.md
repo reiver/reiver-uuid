@@ -1,0 +1,32 @@
+# Bit Meaning ([UUID Guide](../../README.md))
+
+by [Charles Iliya Krempeaux](http://changelog.ca/)
+
+---
+
+Now let's look a little closer at **UUID**s.
+
+A **UUID** is 128-bits of data — do any of those bits have special meanings? The answer is — yes.
+Some bit ranges within the **128-bits** of a **UUID** have specific meanings. For example:
+
+```
+xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
+```
+
+The 4-bits of the `“M”` represents the **version** of the **UUID** that the **UUID** should be interpreted under.
+
+And the most-significant **3-bits** of the `“N”` represents the **variant** of the **UUID** that the **UUID** should be interpreted under.
+
+So, for example, consider this **UUID**L
+```
+            version
+              ↓
+4ffed962-adf6-4eef-931d-8d95b798c080
+                   ↑
+                variant
+``` 
+
+The version is **UUID** **version** is `4`.
+
+And the **UUID** **variant** is `8`.
+(Why the **UUID** **variant** is `8` rather than `9` in this example will make more sense later, when we look at the **UUID** **variant** more closely.)
