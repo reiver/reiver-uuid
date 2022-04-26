@@ -27,8 +27,12 @@ You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002
 | Hexadecimal         | `ea35427ec39f11ec9d640242ac120002`                                                                                                 |
 | Array of Bytes      | `[16]byte{0xea, 0x35, 0x42, 0x7e, 0xc3, 0x9f, 0x11, 0xec, 0x9d, 0x64, 0x02, 0x42, 0xac, 0x12, 0x00, 0x02}`                         |
 | Binary              | `11101010001101010100001001111110110000111001111100010001111011001001110101100100000000100100001010101100000100100000000000000010` |
+| base32              | 5I2UE7WDT4I6ZHLEAJBKYEQAAI======                                                                                                   |
+| bas64               | 6jVCfsOfEeydZAJCrBIAAg==                                                                                                           |
+| base64url           | 6jVCfsOfEeydZAJCrBIAAg                                                                                                             |
+| ascii85             | l8:nW_k.P-SR_dgX:bL7                                                                                                               |
 
-The useful thing about the `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
+The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
