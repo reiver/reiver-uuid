@@ -294,5 +294,6 @@ Here is are some of the different types of variants that currently exist:
 | Microsoft    | `110`        |
 | Future       | `111`        |
 
+## UUID: Version = 4; Variant = RFC 4122
 
-
+In this guide we are going to focus on first focus on **UUID** **version** `4` **UUID**s with a **UUID** **variant** of `RFC 4122` (`100`).
