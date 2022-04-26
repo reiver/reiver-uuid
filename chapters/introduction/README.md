@@ -181,58 +181,6 @@ The version is **UUID** **version** is `4`.
 And the **UUID** **variant** is `8`.
 (Why the **UUID** **variant** is `8` rather than `9` in this example will make more sense later, when we look at the **UUID** **variant** more closely.)
 
-## UUID Version
-
-Let's look a little close at the **UUID version** bits.
-
-For example, we migh have:
-
-| UUID Version | Form                                  | Example                                 |
-|--------------|---------------------------------------|-------------------------------------=---|
-| Version 1    | `xxxxxxxx-xxxx-1xxx-Nxxx-xxxxxxxxxxxx` | `ea35427e-c39f-11ec-9d64-0242ac120002` |
-| Version 4    | `xxxxxxxx-xxxx-4xxx-Nxxx-xxxxxxxxxxxx` | `5a768259-b599-4051-b647-714a5db21d0d` |
-
-The version hexadecimal nibble is here:
-
-```
-            version
-              ↓
-xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
-              ↑
-            version
-
-
-            version
-              ↓
-xxxxxxxx-xxxx-1xxx-Nxxx-xxxxxxxxxxxx
-xxxxxxxx-xxxx-4xxx-Nxxx-xxxxxxxxxxxx
-              ↑
-            version
-
-            version
-              ↓
-ea35427e-c39f-11ec-9d64-0242ac120002
-5a768259-b599-4051-b647-714a5db21d0d
-9d345a19-98c6-4b36-8dbf-8c4cca4352f3
-ed7ba470-8e54-465e-825c-99712043e01c
-573e0100-1364-7a49-9b8f-6b3e35e8b3c4
-              ↑
-            version
-```
-
-So, for example, here is the version more explictly stated for each of these:
-
-| UUID                                   | UUID Version |
-|----------------------------------------|--------------|
-| `xxxxxxxx-xxxx-1xxx-Nxxx-xxxxxxxxxxxx` | `1`          |
-| `xxxxxxxx-xxxx-4xxx-Nxxx-xxxxxxxxxxxx` | `4`          |
-| `ea35427e-c39f-11ec-9d64-0242ac120002` | `1`          |
-| `5a768259-b599-4051-b647-714a5db21d0d` | `4`          |
-| `9d345a19-98c6-4b36-8dbf-8c4cca4352f3` | `4`          |
-| `ed7ba470-8e54-465e-825c-99712043e01c` | `4`          |
-| `573e0100-1364-7a49-9b8f-6b3e35e8b3c4` | `7`          |
-
-
 ## UUID Variant
 
 Now let's look a little close at the **UUID variant** bits.
