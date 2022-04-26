@@ -34,7 +34,16 @@ There are other conventions for creating **globally unique identifiers** (**GUID
 (You can even make up your own convention.) 
 But in this **guide** we will focus on **UUID**s.
 
+## LUID
+
 A **globally unique identifier** (**GUID**) would be contrasted against a **locally unique identifier**.
+
+An example of a **locally unique identifier** is a _primary-key_ in a database table. For example in Postgres it would be positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc. Within a single table these are unique. But other tables might also use those exact same alues for its own _primary-keys_.
+
+**UUID**s are NOT **locally unique identifiers**, they are **globally unique identifiers**.
+If they were used for _primary-keys_ of database tables, they would be unique everywhere, with every database in the universe, and across time.
+
+## Distributed GUID versus Centralized GUID
 
 There are two main strategies for creating a **GUID**:
 
