@@ -19,8 +19,17 @@ If you cannot answer any of the following questions, then go re-read the overvie
 
 6. How many bits of the bits in a **UUID** are actually available for the **GUID**?
 
-7. What is the **version** of this **UUID** `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`?
-8. What is the **variant** of this **UUID** `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`?
+7. What is the **version** of each of these **UUID**s:
+
+* `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`
+* `4f596964-c67a-11ec-9d64-0242ac120002`
+* `0aa3f959-fdff-4838-8378-f9098beadb87`
+
+8.  What is the **variant** of each of these **UUID**s?
+
+* `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`
+* `4f596964-c67a-11ec-9d64-0242ac120002`
+* `0aa3f959-fdff-4838-8378-f9098beadb87`
 
 9. What can you use a **UUID** for? Provide examples.
 
