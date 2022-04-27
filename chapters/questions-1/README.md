@@ -23,3 +23,7 @@ If you cannot answer any of the following questions, then go re-read the overvie
 8. What is the **variant** of this **UUID** `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`?
 
 9. What can you use a **UUID** for? Provide examples.
+
+10. What is a GUID?
+11. What is the difference between a GUID and an LUID?
+12. What is the difference between a GUID and a UUID?
