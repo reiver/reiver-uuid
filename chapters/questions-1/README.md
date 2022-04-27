@@ -19,7 +19,7 @@ If you cannot answer any of the following questions, then go re-read the overvie
 
 6. How many bits of the bits in a **UUID** are actually available for the **GUID**?
 
-7. What is the **version** of each of these **UUID**s:
+7. What is the **version** of each of these **UUID**s?
 
 * `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`
 * `4f596964-c67a-11ec-9d64-0242ac120002`
