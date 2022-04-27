@@ -21,3 +21,5 @@ If you cannot answer any of the following questions, then go re-read the overvie
 
 7. What is the **version** of this **UUID** `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`?
 8. What is the **variant** of this **UUID** `62cc68d6-58ee-969a-ae93-0f2fe1835f3c`?
+
+9. What can you use a **UUID** for? Provide examples.
