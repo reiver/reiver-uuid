@@ -164,3 +164,11 @@ And then maybe our 8 bytes of **randomness** would be:
 ```
 b3 d0 6b 9d 9b fe 96 6e
 ```
+
+And then we could combine them with the **current time** in the most-significant position, and the **randomness** in the least-significant position, to get:
+```
+00 00 00 00 62 6C A0 82 b3 d0 6b 9d 9b fe 96 6e  
+\_____________________/ \_____________________/
+           |                       |
+      current time              randomness
+```
