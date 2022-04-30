@@ -33,8 +33,8 @@ Programming
 15. [Type](chapters/type/README.md)
 16. [uuid.Construct()](chapters/function-construct/README.md)
 17. [Unit Tests for uuid.Construct()](chapters/function-construct-unit-tests/README.md)
-18. fmt.Stringer
-19. Unit Tests for fmt.Stringer
+18. [fmt.Stringer](chapters/method-string/README.md)
+19. [Unit Tests for fmt.Stringer](chapters/method-string-unit-tests/README.md)
 20. [uuid.Random()](chapters/function-random/README.md)
 21. [Unit Tests for uuid.Random()](chapters/function-random/unit-tests/README.md)
 
