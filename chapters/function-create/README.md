@@ -1,14 +1,14 @@
-# uuid.Create() ([UUID Guide](../../README.md))
+# uuid.Construct() ([UUID Guide](../../README.md))
 
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-Now you are going to create a function called `Create` that will create a `uuid.UUID` from 16 bytes:
+Now you are going to create a function called `Construct` that will construct a `uuid.UUID` from 16 bytes:
 ```golang
 package uuid
 
-func Create(
+func Construct(
 	b0 byte,
 	b1 byte,
 	b2 byte,
@@ -34,10 +34,10 @@ func Create(
 
 So if I was to call:
 ```golang
-value := uuid.Create(0xed, 0x7b, 0xa4, 0x70, 0x8e, 0x54, 0x46, 0x5e, 0x82, 0x5c, 0x99, 0x71, 0x20, 0x43, 0xe0, 0x1c)
+value := uuid.Construct(0xed, 0x7b, 0xa4, 0x70, 0x8e, 0x54, 0x46, 0x5e, 0x82, 0x5c, 0x99, 0x71, 0x20, 0x43, 0xe0, 0x1c)
 ```
 
-Then I expect this to create the **UUID** `ed7ba470-8e54-465e-825c-99712043e01c`.
+Then I expect this to construct the **UUID** `ed7ba470-8e54-465e-825c-99712043e01c`.
 
 Which would mean that the `uuid.UUID.value` array would have a value of:
 ```golang
