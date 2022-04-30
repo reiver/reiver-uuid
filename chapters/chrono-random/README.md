@@ -25,7 +25,7 @@ A way you can deal with this concern is to incorporate both **time** and **rando
 
 ## String Example
 
-Let's look at example of this.
+Let's look at example of a chrono-random **GUID** try to make all this clearer.
 This first example will NOT be a **UUID**.
 But I think it will help make chrono-random **GUID**s make more sense if I show you this first.
 
