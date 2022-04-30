@@ -35,3 +35,5 @@ func TestUUID_String(t *testing.T) {
 	}
 }
 ```
+
+Complete the `//@TODO` in this code by adding 12 more test **UUID**s.
