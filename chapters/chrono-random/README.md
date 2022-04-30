@@ -44,9 +44,9 @@ Here are some examples:
 | Format Name | Formatted Time                   |
 |-------------|----------------------------------|
 | GMT         | 2022-04-30T02:35:46Z             |
-| ISO 8601    | 2022-04-30T07:26:36+00:00        |
-| RFC 822     | Sat, 30 Apr 2022 07:26:36 +0000  |
-| RFC 2822    | Saturday, 30-Apr-22 07:26:36 UTC |
+| ISO 8601    | 2022-04-30T02:35:46+00:00        |
+| RFC 822     | Sat, 30 Apr 2022 02:35:46 +0000  |
+| RFC 2822    | Saturday, 30-Apr-22 02:35:46 UTC |
 | Unix Time   | 1651286146                       |
 
 You could even create your own time format.
@@ -101,9 +101,11 @@ So, using our previous example, we could get:
 
 This _could_ work as a _chrono random_ **GUID**, but it is space inefficient.
 
-We be more space efficient if we combine the _current time_ and the _randomness_ together as binary.
+## Binary Example
 
-## Binary Time Conventions
+We could be more space efficient if we combine the _current time_ and the _randomness_ together as binary.
+
+### Binary Example: Binary Time Conventions
 
 There are different ways of store **time** as binary.
 
@@ -122,7 +124,7 @@ Etc.
 These are just decisions that one needs to make. 
 (Likely influenced by what the computers you have to deal with are capable of now, whatever future you are trying to future-proof for, plus likely what is familiar & easier for you, etc.)
 
-## Unix Time
+### Binary Example: Unix Time
 
 **Unix Time** is an example of a type of binary time representation that became popular with the rise of popularity of Unix & Linux.
 
@@ -137,10 +139,28 @@ Therefore —
 
 Negative values are times _before_ the **zero** value (which corresponds to **1970-01-01T00:00:00Z**).
 
-## Example Chrono Random
+If we were to use **unix time** for our **binary time** for our **GUID**, to deal with its **year 2038 problem** (i.e., its **epochalypse**), we might make it to use **64-bits** (rather than **32-bits**).
 
-Let's create an example **chrono random** **GUID**.
+(This won't get rid of the epochalypse. But it would instead move 32-bit unix time's epochalypse from Tuesday January 19th, 2038 at 03:14:07 UTC to some future date. And thus would make our **GUID**s be useful longer.)
 
-We will just use **32-bit** **unix time** for the current time.
+### Binary Example: Randomness
 
-And we will use a **32-bit** **random number
+For the **randomness**, we just need to pick how many bytes of randomness we want.
+
+It needs to be _large-enough_.
+
+For the sake of our example, we will just pick 64-bits of randomness.
+
+### Binary Example: Chrono Random
+
+So, given that we have chosen to use **64-bit** **unix time** for our **binary time**, and use **64-bits** (i.e., 8 bytes) of **randomness**, then —
+
+If our **current time** was **Saturday April 30th at 02:35:46 GMT**, as 64-bit **unix time** this would be (in hexadecimal):
+```
+00 00 00 00 62 6C A0 82
+```
+
+And then maybe our 8 bytes of **randomness** would be:
+```
+b3 d0 6b 9d 9b fe 96 6e
+```
