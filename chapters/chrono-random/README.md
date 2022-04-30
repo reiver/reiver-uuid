@@ -4,48 +4,83 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-One strategy for creating a **globally unique identifier** (**GUID**) is by using **random numbers** chosen from a space that is large-enough.
+As I mentioned before — one **distributed** method of creating a **globally unique identifier** (**GUID**) is with **random numbers** chosen from a space that is large-enough.
 
-You just implemented this strategy for **UUID**s with your `uuid.Random()` function.
+For example, randomly pick a number between `0` and `115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,935`. That number range is huge!!
+
+When you created your `uuid.Random()` function you implemented this type strategy for **UUID**s.
 
 Although this strategy is _good_, some people don't feel this strategy is _good enough_.
 
-They worry that with enough people creating **GUID**s in the future, someone could re-create an already create (randomly create) **GUID**.
+They worry that with enough people creating **GUID**s in the future, someone could re-create an already created (randomly created) **GUID**.
 
-These chances of that happening is very very very small, but it isn't zero.
+The chances of that happening is very very very small — but it isn't zero.
+So, even though it is very very very unlikely to happen — it actually _could_ happen.
 
-## Time ++ Randomness
+## Time & Randomness
 
-A way you can deal with this concern is incorporate both **time** and **random numbers** into your **GUID**.
+A way you can deal with this concern is to incorporate both **time** and **randomness** into your **GUID**.
 
-**Infact, this is the method I used to create GUIDs back in the 1990s, before I ever heard of UUIDs.**
-
-Let's first look at this in general, and then look at how we can implement this for **UUID**s.
+**Infact, back in the 1990s and early 2000s when I was creating GUIDs this — chrono-random method of concatenating the current-time and randomness to create a GUID — is the method I used.** (This was before I ever heard **UUID**s.)
 
 ## String Example
 
-We need 2 things to construct this type of **GUID**:
+Let's look at example of this.
+This first example will NOT be a **UUID**.
+But I think it will help make chrono-random **GUID**s make more sense if I show you this first.
+
+We need 2 things to construct a chrono-random **GUID**:
 
 * the **current time**, and
-* a **random number**.
+* a **randomness**.
 
-From an implementation point-of-view, you will also care about **what format the time is in**, and **the bit size of the random number**.
-But can worry about those 2 details later.
+### String Example: Current Time
 
-Let's say the **current time** is:
-```golang
-"2022-03-30T02:35:46Z"
+Let's say the **current time** is — **Saturday April 30th at 02:35:46 GMT**.
+
+As a string, I could express this time in a number of different ways.
+Here are some examples:
+
+| Format Name | Formatted Time                   |
+|-------------|----------------------------------|
+| GMT         | 2022-04-30T02:35:46Z             |
+| ISO 8601    | 2022-04-30T07:26:36+00:00        |
+| RFC 822     | Sat, 30 Apr 2022 07:26:36 +0000  |
+| RFC 2822    | Saturday, 30-Apr-22 07:26:36 UTC |
+| Unix Time   | 1651286146                       |
+
+You could even create your own time format.
+I'm sure you can imagine a lot of different ways of expressing this time.
+
+For the sake of this example, I'm just going to choose _GMT_:
+```
+2022-04-30T02:35:46Z
 ```
 
-(I used **UTC** format for the time here, as lexical (string) ordering of UTC time is also chronological ordering. Which is a very nice property.)
+### String Example: Randomness
 
-And let's say that the **random number** we draw is:
-```golang
-"e5UTcWYaZeVN-C-SpQTJG6RWwzfZCJqbC7ZbC7bAutxK6j7ZRtTTJP9nOTFBOdl5WzssKxI99uc2l9aS9srRDw"
+Now we need some randomness.
+
+For the sake of this example, we will just get 32 random bytes:
 ```
-(I used **base64url** binary-to-text encoding for the random number here.)
+b3 d0 6b 9d 9b fe 96 6e 02 ca 0b 83 c5 3b 52 1b 
+da 59 e4 e5 f1 2c fe 32 00 35 fc 57 65 16 28 c8 
+```
 
-We could then combine these 2 strings to create our _chromo random_ **GUID**.
+With this too, we can express this in a number of different ways:
+
+| Format Name         | Formatted Bytes                                                    |
+|---------------------|--------------------------------------------------------------------|
+| Hexadecimal         | b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8   |
+| Hexadecimal Literal | 0xb3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8 |
+| Decimal             |                                                                    |
+| base32              |                                                                    |
+| base64              |                                                                    |
+| base64url           |                                                                    |
+
+### String Example: Combination
+
+Now we need to combine the **current time** with the **randomness** to make our _chrono random_ **GUID**.
 
 There are a lot of different ways we could combine them.
 Here is one of them:
@@ -55,14 +90,14 @@ Here is one of them:
 
 So, using our previous example, we could get:
 ```golang
-"2022-03-30T02:35:46Z_e5UTcWYaZeVN-C-SpQTJG6RWwzfZCJqbC7ZbC7bAutxK6j7ZRtTTJP9nOTFBOdl5WzssKxI99uc2l9aS9srRDw"
+"2022-03-30T02:35:46Z_b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8"
 ```
 
 This _could_ work as a _chrono random_ **GUID**, but it is space inefficient.
 
 We be more space efficient if we combine the _current time_ and the _randomness_ together as binary.
 
-## Binary Time
+## Binary Time Conventions
 
 There are different ways of story **time** as binary.
 
@@ -95,3 +130,11 @@ Another implementation detail of **unix time** is that the **32-bit** representa
 Therefore —
 
 Negative values are times _before_ the **zero** value (which corresponds to **1970-01-01T00:00:00Z**).
+
+## Example Chrono Random
+
+Let's create an example **chrono random** **GUID**.
+
+We will just use **32-bit** **unix time** for the current time.
+
+And we will use a **32-bit** **random number
