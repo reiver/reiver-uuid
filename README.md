@@ -57,7 +57,7 @@ Programming
 
 Project
 
-27. uuid Program
+27. uuid Program (chrono random)
 
 Overview
 
@@ -72,7 +72,7 @@ Programming
 
 Project
 
-33. uuid Program
+33. uuid Program (binary)
 
 Overview
 
