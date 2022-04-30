@@ -4,7 +4,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-This is a **guide** on **universally unique identifier**, which is usually shortened as **UUID**.
+This is a **guide** on the technology that goes by the name **universally unique identifiers** (**UUID**).
 
 ## Table of Contents
 
