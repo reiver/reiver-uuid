@@ -69,14 +69,20 @@ da 59 e4 e5 f1 2c fe 32 00 35 fc 57 65 16 28 c8
 
 With this too, we can express this in a number of different ways:
 
-| Format Name         | Formatted Bytes                                                    |
-|---------------------|--------------------------------------------------------------------|
-| Hexadecimal         | b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8   |
-| Hexadecimal Literal | 0xb3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8 |
-| Decimal             |                                                                    |
-| base32              |                                                                    |
-| base64              |                                                                    |
-| base64url           |                                                                    |
+| Format Name         | Formatted Bytes                                                               |
+|---------------------|-------------------------------------------------------------------------------|
+| Hexadecimal         | b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8              |
+| Hexadecimal Literal | 0xb3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8            |
+| Decimal             | 81332246821877457271626536020409467157667622911098444505732082021122748852424 |
+| base32              | WPIGXHM372LG4AWKBOB4KO2SDPNFTZHF6EWP4MQAGX6FOZIWFDEA====                      |
+| base64              | s9BrnZv+lm4CyguDxTtSG9pZ5OXxLP4yADX8V2UWKMg=                                  |
+| base64url           | s9BrnZv-lm4CyguDxTtSG9pZ5OXxLP4yADX8V2UWKMg                                   |
+| ascii85             | Zd<KYS,S^k!m1n'`B-s:g0*LunLXYp!&a[UAJQ]8                                      |
+
+For the sake of this example, I'm just going to choose hexadecimal:
+```
+b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8
+```
 
 ### String Example: Combination
 
