@@ -36,7 +36,7 @@ Programming
 18. [fmt.Stringer](chapters/method-string/README.md)
 19. [Unit Tests for fmt.Stringer](chapters/method-string-unit-tests/README.md)
 20. [uuid.Random()](chapters/function-random/README.md)
-21. [Unit Tests for uuid.Random()](chapters/function-random/unit-tests/README.md)
+21. [Unit Tests for uuid.Random()](chapters/function-random-unit-tests/README.md)
 
 Project
 
