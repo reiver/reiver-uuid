@@ -67,7 +67,7 @@ b3 d0 6b 9d 9b fe 96 6e 02 ca 0b 83 c5 3b 52 1b
 da 59 e4 e5 f1 2c fe 32 00 35 fc 57 65 16 28 c8 
 ```
 
-With this too, we can express this in a number of different ways:
+With this too, we can express this in different ways:
 
 | Format Name         | Formatted Bytes                                                               |
 |---------------------|-------------------------------------------------------------------------------|
@@ -105,7 +105,7 @@ We be more space efficient if we combine the _current time_ and the _randomness_
 
 ## Binary Time Conventions
 
-There are different ways of story **time** as binary.
+There are different ways of store **time** as binary.
 
 How many **bits** do we use to store time?
 
@@ -120,7 +120,7 @@ What time does **zero** represent?
 Etc.
 
 These are just decisions that one needs to make. 
-(Likely influenced by what the computers you have to deal with are capable of now, and whatever future you are trying to future-proof for.)
+(Likely influenced by what the computers you have to deal with are capable of now, whatever future you are trying to future-proof for, plus likely what is familiar & easier for you, etc.)
 
 ## Unix Time
 
