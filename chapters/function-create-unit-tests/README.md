@@ -1,14 +1,14 @@
-# Unit Tests for uuid.Create() ([UUID Guide](../../README.md))
+# Unit Tests for uuid.Construct() ([UUID Guide](../../README.md))
 
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-Now, write _unit tests_ for your `uuid.Create()` function.
+Now, write _unit tests_ for your `uuid.Construct()` function.
 
 Here is some code to get you started:
 ```golang
-func TestCreate(t *testing.T) {
+func TestConstruct(t *testing.T) {
 
 	tests := []struct{
 		B0 byte
@@ -54,7 +54,7 @@ func TestCreate(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		result := Create(
+		result := Construct(
 			test.B0,
 			test.B1,
 			test.B2,
