@@ -36,3 +36,6 @@ If you cannot answer any of the following questions, then go re-read the overvie
 10. What is a GUID?
 11. What is the difference between a GUID and an LUID?
 12. What is the difference between a GUID and a UUID?
+
+13. What are some examples of Centralized GUIDs?
+14. What are some examples of Distributed GUIDs?
