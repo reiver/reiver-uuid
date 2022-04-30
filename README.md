@@ -31,8 +31,8 @@ Programming
 13. Generating
 14. [Git Repository](chapters/git-repository/README.md)
 15. [Type](chapters/type/README.md)
-16. [uuid.Create()](chapters/function-create/README.md)
-17. [Unit Tests for uuid.Create()](chapters/function-create-unit-tests/README.md)
+16. [uuid.Construct()](chapters/function-construct/README.md)
+17. [Unit Tests for uuid.Construct()](chapters/function-construct-unit-tests/README.md)
 18. fmt.Stringer
 19. Unit Tests for fmt.Stringer
 20. [uuid.Random()](chapters/function-random/README.md)
