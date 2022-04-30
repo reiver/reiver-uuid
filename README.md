@@ -44,7 +44,7 @@ Project
 
 Overview
 
-23. Chrono Random
+23. [Chrono Random](chapters/chrono-random/README.md)
 
 Questions
 
