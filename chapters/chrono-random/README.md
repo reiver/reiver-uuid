@@ -66,7 +66,7 @@ We be more space efficient if we combine the _current time_ and the _randomness_
 
 There are different ways of story **time** as binary.
 
-How many **bits** do we use to story time?
+How many **bits** do we use to store time?
 
 What is the smallest **resolution** that can be represented?
 A second?
@@ -76,5 +76,22 @@ Etc?
 
 What time does **zero** represent?
 
+Etc.
+
 These are just decisions that one needs to make. 
 (Likely influenced by what the computers you have to deal with are capable of now, and whatever future you are trying to future-proof for.)
+
+## Unix Time
+
+**Unix Time** is an example of a type of binary time representation that became popular with the rise of popularity of Unix & Linux.
+
+Traditionally **unix time**:
+
+* encoded time into **32-bits**,
+* has a **resolution** of **seconds**,
+* has **zero** represent **1970-01-01T00:00:00Z**.
+
+Another implementation detail of **unix time** is that the **32-bit** representation is a **signed integer**.
+Therefore —
+
+Negative values are times _before_ the **zero** value (which corresponds to **1970-01-01T00:00:00Z**).
