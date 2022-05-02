@@ -16,6 +16,7 @@ They worry that with enough people creating **GUID**s in the future, someone cou
 
 The chances of that happening is very very very small — but it isn't zero.
 So, even though it is very very very unlikely to happen — it actually _could_ happen.
+And some people consider this is problem enough that they choose to try to address it.
 
 ## Time & Randomness
 
