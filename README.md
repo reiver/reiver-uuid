@@ -118,6 +118,17 @@ Project
 
 The purpose of this **guide** is to keep this **knowledge alive**.
 
-To pass on an **understanding** sufficient for others, such as yourself, to be able to **implement** this themselves from-scratch.
+To pass on an **understanding** sufficient for others, such as yourself, to be able to **implement** this themselves from-scratch — without making use of any previous implementations of it.
 
 And to get others, such as yourself, to **implement** this themselves.
+
+I think it is important for our **culture** that, as long as this is useful, not only does this (and other) knowledge stay as **living knowledge**, but that the ability to and practice of **re-creating it again**, without making use of any previous implementations of it, stays alive too.
+
+To keep this alive, each generation needs to re-create it themselves, and use that implementation.
+
+Create your own implementation of this.
+Use your implementation.
+
+This is how we can create a culture around this and other knowledge.
+This is how we can create a tradition around this and other knowledge.
+This is how we can create an institution around this and other knowledge.
