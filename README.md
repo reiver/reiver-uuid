@@ -4,7 +4,13 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-This is a **guide** on the technology that goes by the name **universally unique identifiers** (**UUID**).
+This is a **guide** on the technology that goes by the name **universally unique identifiers** (**UUID**). I.e., things that looks like these:
+
+* `31905b9b-b1fa-4086-bcb9-bda8502a0958`
+* `19077f38-5498-46a6-844d-f494086b8ca1`
+* `e50c17c0-c9b0-11ec-9d64-0242ac120002`
+* `49b1ca0e-d78f-55f3-8d58-197bac044ebb`
+* `c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e`
 
 ## Table of Contents
 
