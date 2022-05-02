@@ -22,7 +22,7 @@ Overview
 2. [Usages](chapters/usages/README.md)
 3. [Semiotics](chapters/semiotics/README.md)
 4. [Unique ID](chapters/unique-id/README.md)
-5. [LUID](chapters/luid/README.md)
+5. [Unique ID Examples](chapters/unique-id-examples/README.md)
 6. [Centralized GUID](chapters/centralized-guid/README.md)
 7. [Distributed GUID](chapters/distributed-guid/README.md)
 8. [Bit Meaning](chapters/bit-meaing/README.md)
