@@ -12,6 +12,8 @@ This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., thin
 * `49b1ca0e-d78f-55f3-8d58-197bac044ebb`
 * `c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e`
 
+Even though they look similar, **UUID**s should not be confused with **GUID**s that were popularized by **Microsoft**.
+
 ## Table of Contents
 
 Overview
