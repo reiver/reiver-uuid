@@ -24,7 +24,7 @@ Overview
 4. [Unique ID](chapters/unique-id/README.md)
 5. [Unique ID Examples](chapters/unique-id-examples/README.md)
 6. [Centralized Unique ID](chapters/centralized-unique-id/README.md)
-7. [Distributed GUID](chapters/distributed-guid/README.md)
+7. [Distributed Unique ID](chapters/distributed-unique-id/README.md)
 8. [Bit Meaning](chapters/bit-meaing/README.md)
 9. [Version](chapters/version/README.md)
 10. [Variant](chapters/variant/README.md)
