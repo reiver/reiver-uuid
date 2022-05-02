@@ -107,5 +107,6 @@ Then when we combine this we get our string-base chrono-random **GUID**:
 
 ## String versus Binary
 
-This technique & format _could_ work as a _chrono random_ **GUID**, but it is space inefficient.
-This _could_ be more space efficient if we instead used a binary format.
+This technique & format _could_ work as a _chrono random_ **GUID**, but if we were to actually store it this was as a _string_ then it is space inefficient.
+
+This _could_ be more space efficient if we instead used stored it in a binary format.
