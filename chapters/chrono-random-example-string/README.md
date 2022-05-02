@@ -86,5 +86,26 @@ So, using our previous example _current-time_ and _randomness_, we could get:
 "2022-03-30T02:35:46Z_b3d06b9d9bfe966e02ca0b83c53b521bda59e4e5f12cfe320035fc57651628c8"
 ```
 
-This _could_ work as a _chrono random_ **GUID**, but it is space inefficient.
+## Do It Again
+
+Let's see that again, but with a different _current-time_ and _randomness_.
+
+Let's say our _current-time_ is:
+```
+2022-04-02T00:57:03Z
+```
+
+And let's say our _randomness_ is:
+```
+7cbc471e956bb9cc962fd8363fa56a2d3983288f0c5d00fe08e1a0c2e328181c
+```
+
+Then when we combine this we get our string-base chrono-random **GUID**:
+```
+2022-04-02T00:57:03Z_7cbc471e956bb9cc962fd8363fa56a2d3983288f0c5d00fe08e1a0c2e328181c
+```
+
+## String versus Binary
+
+This technique & format _could_ work as a _chrono random_ **GUID**, but it is space inefficient.
 This _could_ be more space efficient if we instead used a binary format.
