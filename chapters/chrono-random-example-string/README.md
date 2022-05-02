@@ -92,7 +92,7 @@ Let's see that again, but with a different _current-time_ and _randomness_.
 
 Let's say our _current-time_ is:
 ```
-2022-04-02T00:57:03Z
+2022-05-02T00:57:03Z
 ```
 
 And let's say our _randomness_ is:
@@ -102,7 +102,7 @@ And let's say our _randomness_ is:
 
 Then when we combine this we get our string-base chrono-random **GUID**:
 ```
-2022-04-02T00:57:03Z_7cbc471e956bb9cc962fd8363fa56a2d3983288f0c5d00fe08e1a0c2e328181c
+2022-05-02T00:57:03Z_7cbc471e956bb9cc962fd8363fa56a2d3983288f0c5d00fe08e1a0c2e328181c
 ```
 
 ## String versus Binary
