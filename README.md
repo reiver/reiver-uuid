@@ -4,7 +4,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., things that looks like these:
+This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., things that look like these:
 
 * `31905b9b-b1fa-4086-bcb9-bda8502a0958`
 * `19077f38-5498-46a6-844d-f494086b8ca1`
@@ -12,7 +12,16 @@ This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., thin
 * `49b1ca0e-d78f-55f3-8d58-197bac044ebb`
 * `c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e`
 
-Even though they look similar, **UUID**s should not be confused with **GUID**s that were popularized by **Microsoft**.
+Although, don't confuse **UUID**s with **GUID**s (that were popularized by Microsoft).
+They look the very very very similar, but aren't the same thing.
+
+## Preamble
+
+The purpose of this **guide** is to keep this **knowledge alive**.
+
+To pass on an **understanding** sufficient for you to implement this yourself from-scratch (rather than having to rely on a library written by soeone else).
+
+It think it is important for our **culture** that not only does this knowledge stay as **living knowledge**, but that the ability create it without making use of any previous implementation of it stays alive too.
 
 ## Table of Contents
 
