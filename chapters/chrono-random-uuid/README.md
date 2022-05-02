@@ -4,7 +4,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-You already covered how to create a **chrono-random** **GUID** from scratch.
+I already covered how to create a **chrono-random** **GUID** from scratch.
 
 Now lets see how we could make **chrono-random** **UUID**s.
 
@@ -17,6 +17,7 @@ Just to refresh — here are some example **version 4** **UUID**s expressed in t
 * `f66c76f0-fcc3-49d8-91e1-49443826152d`
 * `bc9253fe-94a9-449b-9a3c-0011314e9687`
 * `015eeaed-a398-44d2-8ddc-2abe0114cfad`
+* `9ccb9040-73a4-4563-bcb6-2bd672cbce13`
 
 As you already know (because we already covered it), **UUID**s specify what **version** they are with the most-significant 4-bits of their 7th bytes.
 
@@ -27,9 +28,55 @@ You can easily see the **version** in the **UUID** canonical format by looking a
 f66c76f0-fcc3-49d8-91e1-49443826152d
 bc9253fe-94a9-449b-9a3c-0011314e9687
 015eeaed-a398-44d2-8ddc-2abe0114cfad
+9ccb9040-73a4-4563-bcb6-2bd672cbce13
               ↑
            version
 ```
 
 ## UUID Variant
 
+And **UUID**s specify their variant with the most-significant 3-bits of their 9th bytes.
+
+This is difficult to see when looking at **UUID**s in their canonical format, but is easier to see if we switch to binary:
+```
+f66c76f0-fcc3-49d8-91e1-49443826152d
+                   ⟱
+           ┌───┬───┬───┬───┐
+           │ 1 │ 0 │ 0 │ 1 │ = 9
+           └───┴───┴───┴───┘
+            \_________/
+                 |
+              variant
+```
+```
+bc9253fe-94a9-449b-9a3c-0011314e9687
+                   ⟱
+           ┌───┬───┬───┬───┐
+           │ 1 │ 0 │ 0 │ 1 │ = 9
+           └───┴───┴───┴───┘
+            \_________/
+                 |
+              variant
+
+```
+```
+015eeaed-a398-44d2-8ddc-2abe0114cfad
+                   ⟱
+           ┌───┬───┬───┬───┐
+           │ 1 │ 0 │ 0 │ 0 │ = 8
+           └───┴───┴───┴───┘
+            \_________/
+                 |
+              variant
+
+```
+```
+9ccb9040-73a4-4563-bcb6-2bd672cbce13
+                   ⟱
+           ┌───┬───┬───┬───┐
+           │ 1 │ 1 │ 0 │ 0 │ = b
+           └───┴───┴───┴───┘
+            \_________/
+                 |
+              variant
+```
