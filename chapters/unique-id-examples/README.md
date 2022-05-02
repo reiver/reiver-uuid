@@ -1,20 +1,20 @@
-# LUID ([UUID Guide](../../README.md))
+# Unique ID Examples ([UUID Guide](../../README.md))
 
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-To understand the need for (a convention for) a **globally unique identifier** (**GUID**), it can help to understand and contrast with **locally unique identifier** (**LUID**).
+Let's look at some examples of **unique ID**s to try to make some of this clearer.
 
-## Example: Database Primary-Key
+## Database Primary-Key
 
-An example of a **locally unique identifier** is a _primary-key_ in a database table.
+An example of a **locally** **unique identifier** (**unique ID**) is a _primary-key_ in a database table.
 
 For example with the Postgres database, _primary-keys_ often have positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc.
 Within a single table these primary-key values are unique.
 But other tables might also use those exact same alues for its own _primary-keys_.
 
-For example, imagine you have a `users` table that uses positive integer **LUID**s like so:
+For example, imagine you have a `users` table that uses positive integer **unique ID**s like so:
 
 | ID  | username     |
 |-----|--------------|
@@ -24,7 +24,7 @@ For example, imagine you have a `users` table that uses positive integer **LUID*
 | `4` | hjsimpson    |
 | `5` | brucebanner  |
 
-And also, for example, imagine you have a `products` table that uses positive integer **LUIDs** like so:
+And also, for example, imagine you have a `products` table that uses positive integer **unique ID**s like so:
 
 | ID   | name     | price |
 |------|----------|-------|
@@ -42,10 +42,11 @@ If I just told you the **ID** is `5`, you wouldn't know if I'm referring to `bru
 
 ## UUID
 
-**UUID**s are NOT **locally unique identifiers** (**LUID**), they are **globally unique identifiers** (**GUID**).
-If they were used for _primary-keys_ of database tables, they would be unique everywhere, with every database, and across time.
+The intent of **UUID**s is that they are more broadly _unique_.
 
-So, for example, imagine you have a `users` table that uses **UUID** **GUID**s like so:
+Let's look at what would happen if we instead used **UUID**s for the _primary-keys_
+
+So, for example, imagine you have a `users` table that uses **UUID** as **unique ID**s like so:
 
 | ID                                     | username     |
 |----------------------------------------|--------------|
@@ -55,7 +56,7 @@ So, for example, imagine you have a `users` table that uses **UUID** **GUID**s l
 | `84e60040-0f74-4a2a-9451-d068aa260c9d` | hjsimpson    |
 | `8cff54ab-d888-4613-8363-dc264ff2937f` | brucebanner  |
 
-And also, for example, imagine you have a `products` table that uses **UUID** **GUIDs** like so:
+And also, for example, imagine you have a `products` table that uses **UUID** as **unique IDs** like so:
 
 | ID                                     | name     | price |
 |----------------------------------------|----------|-------|
@@ -65,7 +66,6 @@ And also, for example, imagine you have a `products` table that uses **UUID** **
 | `25197b99-655e-430c-9446-e991a874870f` | Webstor  | $14   |
 | `dd001ac2-0c65-4b06-8a8a-8b98097b634f` | Spikes   | $14   |
 
-If I just told you the ID is `dd001ac2-0c65-4b06-8a8a-8b98097b634f`, you wouldn't need me to tell you which table I was referring to, since it is a **GUID**.
-You would know, just with that information, that I was referring to the `products` table, and in particular, I was referring to `Spikes`.
+If I just told you the ID is `dd001ac2-0c65-4b06-8a8a-8b98097b634f`, you wouldn't need me to tell you which table I was referring to, since it is _unique_ across all tables.
 
-**UUID**s are **GUID**s (_not_ **LUID**s).
+You would know, just with that **UUID**, that I was referring to the `products` table, and in particular, I was referring to `Spikes`.
