@@ -15,14 +15,6 @@ This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., thin
 Although, don't confuse **UUID**s with **GUID**s (that were popularized by Microsoft).
 They look the very very very similar, but aren't the same thing.
 
-## Preamble
-
-The purpose of this **guide** is to keep this **knowledge alive**.
-
-To pass on an **understanding** sufficient for you to **implement** this yourself from-scratch (rather than having to rely on a library written by soeone else).
-
-It think it is important for our **culture** that not only does this knowledge stay as **living knowledge**, but that the ability create it without making use of any previous implementation of it stays alive too.
-
 ## Table of Contents
 
 Overview
@@ -121,3 +113,11 @@ Programming
 Project
 
 46. uuid Program
+
+## Postamble
+
+The purpose of this **guide** is to keep this **knowledge alive**.
+
+To pass on an **understanding** sufficient for others, such as yourself, to be able to **implement** this themselves from-scratch.
+
+And to get others, such as yourself, to **implement** this themselves.
