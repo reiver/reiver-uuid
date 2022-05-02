@@ -8,6 +8,17 @@ You are going to use the `uuid` package you just created to create a new program
 
 You are going to create a program (also) named `uuid`.
 
+## Git Repository
+
+You will create a new git repository for this called `uuid`
+
+So, for example, if you were on `github.com` and your username was `joeblow`, then you new git respository would be at:
+```
+https://github.com/jowblow/uuid
+```
+
+(Luckily the name of the repository for your package is `go-uuid` and not `uuid`, so there will be no conflict.)
+
 ## Requirements
 
 This new program you are going to create will output the **canonical** form of a **UUID** created from your ``uuid.Random()`` function using `fmt.Println()`.
@@ -30,14 +41,3 @@ $ ./uuid
 
 $
 ```
-
-## Git Repository
-
-You will create a new git repository for this called `uuid`
-
-So, for example, if you were on `github.com` and your username was `joeblow`, then you new git respository would be at:
-```
-https://github.com/jowblow/uuid
-```
-
-(Luckily the name of the repository for your package is `go-uuid` and not `uuid`, so there will be no conflict.)
