@@ -16,9 +16,13 @@ Often, when **UUID**s are written, they look like these:
 * `ed7ba470-8e54-465e-825c-99712043e01c`
 * `573e0100-1364-7a49-9b8f-6b3e35e8b3c4`
 
+I.e., a sequence of 32 hexadecimal symbols split-up by hyphens at certain places.
+
 ## 128-Bits
 
 Each of these **UUID**s is really just **128-bits** of data.
+
+Which, if you are dealing with 8-bit bytes (as most computers have nowadays) then ⁠— each of these **UUID**s is really just **16 bytes** of data.
 
 You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002` as the follows:
 
@@ -34,7 +38,7 @@ You could equally write a **UUID** such as `ea35427e-c39f-11ec-9d64-0242ac120002
 | base64url           | `6jVCfsOfEeydZAJCrBIAAg`                                                                                                           |
 | ascii85             | `l8:nW_k.P-SR_dgX:bL7`                                                                                                             |
 
-The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
+The useful thing about the (**canonical**) `ea35427e-c39f-11ec-9d64-0242ac120002` format is that it makes those **128-bits** of data recognizable as a **UUID**.
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
@@ -56,3 +60,5 @@ Rather than (in ASCII / Unicode) as:
 30 32 34 32 61 63 31 32
 30 30 30 32
 ```
+
+(Hopefully it is obvious that the latter is just the ASCII / Unicode UTF-8 encoding of the canonical form string.)
