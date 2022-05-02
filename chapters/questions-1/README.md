@@ -33,9 +33,10 @@ If you cannot answer any of the following questions, then go re-read the overvie
 
 9. What can you use a **UUID** for? Provide examples.
 
-10. What is a GUID?
-11. What is the difference between a GUID and an LUID?
-12. What is the difference between a GUID and a UUID?
+10. What is an LUID? Provide examples.
+11. What is a GUID? Provide examples.
+12. What is the difference between a GUID and an LUID?
+13. What is the difference between a GUID and a UUID?
 
-13. What are some examples of Centralized GUIDs?
-14. What are some examples of Distributed GUIDs?
+14. What are some examples of Centralized GUIDs?
+15. What are some examples of Distributed GUIDs?
