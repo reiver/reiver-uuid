@@ -21,4 +21,4 @@ Your implementation should do the following:
 
 №2: set the most-significant 4-bits of `uuid.UUID.value[6]` to `0b0100`,
 
-№3: set the most-significant 3 bits of `uuid.UUID.value[8]` to `0b100`
+№3: set the most-significant 2-bits of `uuid.UUID.value[8]` to `0b10`
