@@ -7,7 +7,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 Now you will write _unit tests_ for your `uuid.Random()` function, making sure that:
 
 * `uuid.UUID.values[6] & 0xf0` is equal to `0x40`, and that 
-* `uuid.UUID.values[8] & 0xe0` is equal to `0x80`,
+* `uuid.UUID.values[8] & 0xc0` is equal to `0x80`,
 
 … for any **UUID** that is returned from your `uuid.Random()` function.
 
