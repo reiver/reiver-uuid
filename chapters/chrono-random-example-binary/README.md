@@ -17,9 +17,9 @@ We don't actually store it this human-readable format — as 78 bytes:
 37 39 30 37 38 35 33 32 36 39 39 38 34 36 36 35 36 34 30 35 36 34 30 33 39 34 35 37 35 38 34 30
 30 37 39 31 33 31 32 39 36 33 39 39 33 35
 ```
-We instead usually store it efficiently as 32 bytes in a machine-readable format:
+We instead usually store it efficiently as 8 bytes in a machine-readable format:
 ```
-ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+ff ff ff ff ff ff ff ff
 ```
 
 The same can be true for our convention for a chrono-random **GUID** —  we could be more space efficient with how we store and combine the _current time_ and the _randomness_.
