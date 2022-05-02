@@ -22,14 +22,14 @@ The following table illustrates the **variant** more:
 
 | Nibble | Binary | Variant (Binary) | # of Bits | Variant (Name) |
 |--------|--------|------------------|-----------|----------------|
-| 0      | `0000` | `0`              | 1         | Apollo NCS     |
-| 1      | `0001` | `0`              | 1         | Apollo NCS     |
-| 2      | `0010` | `0`              | 1         | Apollo NCS     |
-| 3      | `0011` | `0`              | 1         | Apollo NCS     |
-| 4      | `0100` | `0`              | 1         | Apollo NCS     |
-| 5      | `0101` | `0`              | 1         | Apollo NCS     |
-| 6      | `0110` | `0`              | 1         | Apollo NCS     |
-| 7      | `0111` | `0`              | 1         | Apollo NCS     |
+| 0      | `0000` | `0`              | 1         | Apollo NCA     |
+| 1      | `0001` | `0`              | 1         | Apollo NCA     |
+| 2      | `0010` | `0`              | 1         | Apollo NCA     |
+| 3      | `0011` | `0`              | 1         | Apollo NCA     |
+| 4      | `0100` | `0`              | 1         | Apollo NCA     |
+| 5      | `0101` | `0`              | 1         | Apollo NCA     |
+| 6      | `0110` | `0`              | 1         | Apollo NCA     |
+| 7      | `0111` | `0`              | 1         | Apollo NCA     |
 | 8      | `1000` | `10`             | 2         | **RFC 4122**   |
 | 9      | `1001` | `10`             | 2         | **RFC 4122**   |
 | a      | `1010` | `10`             | 2         | **RFC 4122**   |
@@ -38,6 +38,8 @@ The following table illustrates the **variant** more:
 | d      | `1101` | `110`            | 3         | Microsoft      |
 | e      | `1110` | `111`            | 3         | Future         |
 | f      | `1111` | `111`            | 3         | Future         |
+
+(“Apollo NCA” = “Apollo Network Computer Architecture”)
 
 So, said another way, the number of bits that **variant** takes up is given by this table:
 | Variant (Name) | # of Bits |
