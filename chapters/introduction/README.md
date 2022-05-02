@@ -4,9 +4,9 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-**UUID**, short for **universally unique identifier**, is a popular convention for creating **globally unique identifiers** (**GUID**s).
+**UUID**, short for **universally unique identifier**, is a popular convention for creating **unique identifiers** (**unique ID**s).
 
-(If you aren't sure what a **globally unique identifier** (**GUID**) is yet, we will go into that more later.)
+(If you aren't sure what a **unique identifier** (**unique ID**) is yet, we will go into that more later.)
 
 Often, when **UUID**s are written, they look like these:
 
@@ -15,6 +15,8 @@ Often, when **UUID**s are written, they look like these:
 * `9d345a19-98c6-4b36-8dbf-8c4cca4352f3`
 * `ed7ba470-8e54-465e-825c-99712043e01c`
 * `573e0100-1364-7a49-9b8f-6b3e35e8b3c4`
+
+## 128-Bits
 
 Each of these **UUID**s is really just **128-bits** of data.
 
@@ -36,4 +38,21 @@ The useful thing about the (canonical) `ea35427e-c39f-11ec-9d64-0242ac120002` fo
 
 And most likely, when you see a **UUID**, you will see it in this type of format — `ea35427e-c39f-11ec-9d64-0242ac120002`
 
-Although hopefully when a **UUID** is being stored — it is being story efficiently as **128-bits** of data (rather than a string of its **canonical** form). (Which could, with some programming languages, be an array with 16 8-bit bytes.)
+## Storage
+
+Although hopefully when a **UUID** is being stored — it is being story efficiently as **128-bits** = **16 bytes** of data (rather than a string of its **canonical** form inefficiently taking up at least 36 bytes).
+
+So, stored as:
+```
+ea 35 42 7e c3 9f 11 ec
+9d 64 02 42 ac 12 00 02
+```
+
+Rather than (in ASCII / Unicode) as:
+```
+65 61 33 35 34 32 37 65
+2d 63 33 39 66 2d 31 31
+65 63 2d 39 64 36 34 2d
+30 32 34 32 61 63 31 32
+30 30 30 32
+```
