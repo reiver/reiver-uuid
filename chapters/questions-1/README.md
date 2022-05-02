@@ -17,7 +17,7 @@ If you cannot answer any of the following questions, then go re-read the overvie
 4. How many bits of data in a **UUID** is used for the **variant**?
 5. Which specific bits in a **UUID** are used for the **variant**?
 
-6. How many bits of the bits in a **UUID** are actually available for the **GUID** (once you remove take away the bits used for the **version** and the **variant**)?
+6. How many bits of the bits in a **UUID** are actually available for the **GUID** (once you take away the bits used for the **version** and the **variant**)?
 
 7. What is the **version** of each of these **UUID**s?
 
