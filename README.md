@@ -45,59 +45,62 @@ Project
 Overview
 
 23. [Chrono Random](chapters/chrono-random/README.md)
+24. [Example String Chrono Random GUID](chapters/chrono-random-example-string/README.md)
+25. [Example Binary Chrono Random GUID](chapters/chrono-random-example-binary/README.md)
+26. [Chrono Random UUID](chapters/chrono-random-uuid/README.md)
 
 Questions
 
-24. [UUID Questions №2](chapters/questions-2/README.md)
+27. [UUID Questions №2](chapters/questions-2/README.md)
 
 Programming
 
-25. [uuid.ChronoRandom()](chapters/function-chronorandom/README.md)
-26. [Unit Tests for uuid.ChronoRandom()](chapters/function-chronorandom-unit-tests/README.md)
+28. [uuid.ChronoRandom()](chapters/function-chronorandom/README.md)
+29. [Unit Tests for uuid.ChronoRandom()](chapters/function-chronorandom-unit-tests/README.md)
 
 Project
 
-27. uuid Program (chrono random)
+30. uuid Program (chrono random)
 
 Overview
 
-28. [Binary](chapters/binary/README.md)
+31. [Binary](chapters/binary/README.md)
 
 Programming
 
-29. encoding.BinaryMarshaler
-30. Unit Tests for encoding.BinaryMarshaler
-31. encoding.BinaryUnmarshaler
-32. Unit Tests for encoding.BinaryUnmarshaler
+32. encoding.BinaryMarshaler
+33. Unit Tests for encoding.BinaryMarshaler
+34. encoding.BinaryUnmarshaler
+35. Unit Tests for encoding.BinaryUnmarshaler
 
 Project
 
-33. uuid Program (binary)
+36. uuid Program (binary)
 
 Overview
 
-34. Binary-To-Text Encoding
+37. Binary-To-Text Encoding
 
 Programming
 
-35. encoding.TextMarshaler
-36. Unit Tests for encoding.Textmarshaler
-37. encoding.TextUnmarshaler
-38. Unit Tests for encoding.TextUnmarshaler
+38. encoding.TextMarshaler
+39. Unit Tests for encoding.Textmarshaler
+40. encoding.TextUnmarshaler
+41. Unit Tests for encoding.TextUnmarshaler
 
 Project
 
-39. JSON
+42. JSON
 
 Overview
 
-40. Parsing
+43. Parsing
 
 Programming
 
-41. uuid.Parse()
-42. Unit Tests for uuid.Parse()
+44. uuid.Parse()
+45. Unit Tests for uuid.Parse()
 
 Project
 
-43. uuid Program
+46. uuid Program
