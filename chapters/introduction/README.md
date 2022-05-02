@@ -63,14 +63,17 @@ Rather than (in ASCII / Unicode) as:
 
 (Hopefully it is obvious that the latter is just the ASCII / Unicode UTF-8 encoding of the canonical form string.)
 
-As an _array of bytes_ I could write the former as:
+As an _array of bytes_ —
+
+We could write the former as:
 ```golang
 [16]byte{
 	0xea, 0x35, 0x42, 0x7e, 0xc3, 0x9f, 0x11, 0xec,
 	0x9d, 0x64, 0x02, 0x42, 0xac, 0x12, 0x00, 0x02,
 }
+```
 
-And write the latter as:
+And we could write the latter as:
 ```golang
 [16]byte{
 	0x65, 0x61, 0x33, 0x35, 0x34, 0x32, 0x37, 0x65,
@@ -79,9 +82,10 @@ And write the latter as:
 	0x30, 0x32, 0x34, 0x32, 0x61, 0x63, 0x31, 0x32,
 	0x30, 0x30, 0x30, 0x32,
 }
+```
 
 The latter could also be written as:
-```
+```golang
 [16]byte{
 	byte('e'), byte('a'), byte('3'), byte('5'), byte('4'), byte('2'), byte('7'), byte('e'),
 	byte('-'), byte('c'), byte('3'), byte('9'), byte('f'), byte('-'), byte('1'), byte('1'),
