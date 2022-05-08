@@ -4,7 +4,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., things that look like these:
+This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., one of the two things that look like these:
 
 * `31905b9b-b1fa-4086-bcb9-bda8502a0958`
 * `19077f38-5498-46a6-844d-f494086b8ca1`
