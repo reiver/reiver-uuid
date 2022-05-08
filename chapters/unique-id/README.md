@@ -8,7 +8,7 @@ A **unique identifier** (**unique ID**) is an **identifier** (**ID**) that is **
 
 Let's provide some examples to make all that jargon make more sense.
 
-## Example: 
+## Example: School ID
 
 In some parts of the world, when you attend a school, you are assigned a special number often called something like your **student ID**.
 
@@ -57,17 +57,19 @@ So, the **domain** in this example is **this school**.
 The **unique ID** is the **student ID**.
 And thus the **student ID** is **unique** in **this school**.
 
-## Example
+## Example: Database Table
+
+Let's look at another example that is likely famililar to most programmers nowadays.
 
 Imagine you created a database.
 And in that database was a table.
 
-It doesn't really matter than the table stores, but for the sake of the example, lets say it is a table named `toys`.
+Technically, it doesn't really matter than the table stores, but for the sake of the example, lets say it is a table named `toys` that stores information about toys.
 
-The domain could be just within a single database table within a specific database.
+The **domain** in this example is the `toys` table.
 
-So, in our example, the _domain_ would be our `toys` table.
-#######
+And the **unique ID** might be the **primary-key**.
+
 
 The domain could be the universe of all **IDs** that have ever been created, and will ever be created, across time, and across the unverse!
 I.e., —
