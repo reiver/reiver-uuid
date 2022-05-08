@@ -74,7 +74,7 @@ So, in the **domain** of **Fantast Collect**, the **student ID** is a **unique I
 
 ## Database Primary-Key
 
-An example of a **locally** **unique identifier** (**unique ID**) is a _primary-key_ in a database table.
+Another example of a **locally** **unique identifier** (**unique ID**) is a _primary-key_ in a database table.
 
 For example with the Postgres database, _primary-keys_ often have positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc.
 Within a single table these primary-key values are unique.
@@ -105,6 +105,8 @@ And also, for example, imagine you have a `products` table that uses positive in
 The same **ID**s are used in both tables, and have different means in each table.
 
 If I just told you the **ID** is `5`, you wouldn't know if I'm referring to `brucebanner` (in the `users` table) or `Spikes` (in the `products` table), unless I also told you which table I was referring to.
+
+So, in the **domain** of this particular `products` table, the **ID** primary-key is a **unique ID**.
 
 ## UUID
 
