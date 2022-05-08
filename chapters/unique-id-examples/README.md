@@ -6,6 +6,72 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 Let's look at some examples of **unique ID**s to try to make some of this clearer.
 
+## School ID
+
+In some parts of the world, when you attend a school as a **student**, you are assigned a _special number_ that is often called something like your **student ID**.
+
+Each new student that attends the school is given their own **student ID**.
+And once a student is assigned a particular **student ID**, no other student will ever be given that **student ID**iss.
+
+This **student ID** is a **unique ID**.
+
+Let's look at an example school, to see what I mean.
+Let's make up a school, for the sake of this example:
+```
+Fanstasy College
+```
+
+At Fantasy Collect, the staff at the school with assign to each new student a **student ID** made up of the following 4 pieces of information:
+```
+[YEAR] [MONTH] [CAMPUS] [SEQUENCE-NUMBER]
+```
+
+So, for example, if when the new student joined Fantasy College, we had:
+
+* YEAR = `1995`
+* MONTH = `09` (September)
+* CAMPUS = `000`
+* SEQUENCE-NUMBER = `08750`
+
+I.e., this new student is the **8750th** student to join the school in **September** **1995** at campus **0000**.
+
+Or in other words:
+```
+[YEAR] [MONTH] [CAMPUS] [SEQUENCE-NUMBER]
+ 1995    09      000        08750
+```
+
+Then could write the Fantasy Collect **student ID** for this new student as:
+```
+1995-09-000-08750
+```
+
+Or alternatively, could more compactly write it as:
+```
+19950900008750
+```
+
+What about the next new student to join Fantasy Collect at campus `000` in September 1995?
+Well, that new student would be the 8751st student, and would be assigned the **student ID**:
+```
+19950900008751
+```
+
+Etc.
+
+Here are some more example **student IDs**:
+| Student ID     | Year | Month | Campus | Sequence Number |
+|----------------|------|-------|--------|-----------------|
+| 19950900008750 | 1995 | 09    | 000    | 08750           |
+| 19950900008751 | 1995 | 09    | 000    | 08751           |
+| 19950900005005 | 1995 | 09    | 000    | 05005           |
+| 19960500012269 | 1996 | 05    | 000    | 12269           |
+| 20000900118727 | 2000 | 09    | 001    | 18727           |
+| 20220100421008 | 2022 | 01    | 004    | 21008           |
+
+
+So, in the **domain** of **Fantast Collect**, the **student ID** is a **unique ID**.
+
 ## Database Primary-Key
 
 An example of a **locally** **unique identifier** (**unique ID**) is a _primary-key_ in a database table.
