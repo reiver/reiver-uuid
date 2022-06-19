@@ -41,7 +41,7 @@ Or in other words:
  1995    09      000        08750
 ```
 
-Then could write the Fantasy Collect **student ID** for this new student as:
+Then could write the Fantasy College **student ID** for this new student as:
 ```
 1995-09-000-08750
 ```
@@ -51,7 +51,7 @@ Or maybe, alternatively, could more compactly write it as (if each part was alwa
 19950900008750
 ```
 
-What about the next new student to join Fantasy Collect at campus `000` in September 1995?
+What about the next new student to join Fantasy College at campus `000` in September 1995?
 Well, that new student would be the 8751st student, and would be assigned the **student ID**:
 ```
 19950900008751
