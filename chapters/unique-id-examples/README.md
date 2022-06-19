@@ -70,7 +70,7 @@ Here are some more example **student IDs**:
 | 20220100421008 | 2022 | 01    | 004    | 21008           |
 
 
-So, in the **domain** of **Fantast Collect**, the **student ID** is a **unique ID**.
+So, in the **domain** of **Fantasy College**, the **student ID** is a **unique ID**.
 
 ## Database Primary-Key
 
