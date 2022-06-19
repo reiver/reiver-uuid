@@ -78,7 +78,7 @@ Another example of a **locally** **unique identifier** (**unique ID**) is a _pri
 
 For example with the Postgres database, _primary-keys_ often have positive integer values such as — `1`, `2`, `3`, `4`, `5`, etc.
 Within a single table these primary-key values are unique.
-But other tables might also use those exact same alues for its own _primary-keys_.
+But other tables might also use those exact same values for its own _primary-keys_.
 
 For example, imagine you have a `users` table that uses positive integer **unique ID**s like so:
 
