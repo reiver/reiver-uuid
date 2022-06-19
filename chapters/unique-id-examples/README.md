@@ -21,7 +21,7 @@ Let's make up a school, for the sake of this example:
 Fanstasy College
 ```
 
-At Fantasy Collect, the staff at the school with assign to each new student a **student ID** made up of the following 4 pieces of information:
+At _Fantasy College_, the staff at the school with assign to each new student a **student ID** made up of the following 4 pieces of information:
 ```
 [YEAR] [MONTH] [CAMPUS] [SEQUENCE-NUMBER]
 ```
