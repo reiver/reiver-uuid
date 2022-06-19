@@ -13,4 +13,4 @@ Let's provide some examples to make all that jargon make more sense.
 * digital fingerprint
 * UUID version 4
 
-Now let's go into more detail with each of these examples.
+Now let's go into more detail with each of these examples (in the following chapter).
