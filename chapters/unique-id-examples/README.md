@@ -46,7 +46,7 @@ Then could write the Fantasy Collect **student ID** for this new student as:
 1995-09-000-08750
 ```
 
-Or alternatively, could more compactly write it as:
+Or maybe, alternatively, could more compactly write it as (if each part was always the same number of characters):
 ```
 19950900008750
 ```
