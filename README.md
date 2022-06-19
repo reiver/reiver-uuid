@@ -13,7 +13,7 @@ This is a **guide** on **Universally Unique Identifiers** (**UUID**). I.e., one 
 * `c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e`
 
 Although, don't confuse **UUID**s with **GUID**s (that were popularized by Microsoft).
-They look very very very similar to each other, but are nt the same thing.
+They look very very very similar to each other, but are _not_ the same thing.
 
 ⚠️ Note that I feel that there are better conventions for creating distributed **unique ID**s than **UUID**s (for reasons that will hopefully become more obvious as you work through this guide). But nevertheless, you will very likely come across **UUID**s, and it would be to your benefit to understand them.
 
