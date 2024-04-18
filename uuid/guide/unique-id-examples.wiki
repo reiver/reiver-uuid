@@ -95,7 +95,7 @@ For example, imagine you have a ``users`` table that uses positive integer **uni
 
 And also, for example, imagine you have a ``products`` table that uses positive integer **unique ID**s like so:
 
-	| ID   | name     | price |
+	| ID  | name     | price |
 	|-----|----------|-------|
 	|  1  | Skeletor | $14   |
 	|  2  | Panthor  | $19   |
