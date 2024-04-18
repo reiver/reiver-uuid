@@ -16,6 +16,9 @@ Often, when **UUID**s are written, they look like these:
 
 I.e., a 128-bit number encoded in [[hexadecimal]], with 32 hexadecimal symbols, with hyphens inserted in certain specific places.
 
+(Although, don't confuse **UUID**s with the **GUID**s that were popularized by Microsoft.
+They look very very very similar to each other, but are //not// the same thing.)
+
 §§ 128 Bits
 
 Each of these **UUID**s is really just **128-bits** of data.
