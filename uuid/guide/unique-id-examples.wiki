@@ -10,8 +10,6 @@ wiki/1
 
 ⸺ next [[uuid/guide/centralized-unique-id]]
 
----
-
 Let's look at some examples of **unique ID**s to try to make some of this clearer.
 
 §§ School ID
