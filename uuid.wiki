@@ -1,0 +1,171 @@
+wiki/1
+
+§ uuid
+
+⸺ by Charles Iliya Krempeaux
+
+**UUID**, short for **universally unique identifier**, is a popular convention for creating [[unique-identifier]]s (**unique IDs**).
+
+Often, when **UUID**s are written, they look like these:
+
+• ``31905b9b-b1fa-4086-bcb9-bda8502a0958``
+• ``19077f38-5498-46a6-844d-f494086b8ca1``
+• ``e50c17c0-c9b0-11ec-9d64-0242ac120002``
+• ``49b1ca0e-d78f-55f3-8d58-197bac044ebb``
+• ``c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e``
+
+I.e., a 128-bit number encoded in [[hexadecimal]], with 32 hexadecimal symbols, with hyphens inserted in certain specific places.
+
+§§ 128 Bits
+
+Each of these **UUID**s is really just **128-bits** of data.
+
+Which, if you are dealing with [[8-bit-byte]]s (as most computers have nowadays) then ⁠— each of these **UUID**s is really just **16 bytes** of data.
+
+You could equally write a **UUID** such as ``ea35427e-c39f-11ec-9d64-0242ac120002`` as the following:
+
+	┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+	┃ Type                ┃ Value                                                                                                                              ┃
+	┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+	│ Canonical           │ ea35427e-c39f-11ec-9d64-0242ac120002                                                                                               │
+	│ Hexadecimal Literal │ 0xea35427ec39f11ec9d640242ac120002                                                                                                 │
+	│ Hexadecimal         │ ea35427ec39f11ec9d640242ac120002                                                                                                   │
+	│ Array of Bytes      │ [16]byte{0xea, 0x35, 0x42, 0x7e, 0xc3, 0x9f, 0x11, 0xec, 0x9d, 0x64, 0x02, 0x42, 0xac, 0x12, 0x00, 0x02}                           │
+	│ Binary Literal      │ 0b11101010001101010100001001111110110000111001111100010001111011001001110101100100000000100100001010101100000100100000000000000010 │
+	│ Binary              │ 11101010001101010100001001111110110000111001111100010001111011001001110101100100000000100100001010101100000100100000000000000010   │
+	│ base32              │ 5I2UE7WDT4I6ZHLEAJBKYEQAAI======                                                                                                   │
+	│ bas64               │ 6jVCfsOfEeydZAJCrBIAAg==                                                                                                           │
+	│ base64url           │ 6jVCfsOfEeydZAJCrBIAAg                                                                                                             │
+	│ ascii85             │ l8:nW_k.P-SR_dgX:bL7                                                                                                               │
+	└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+§§ Storage
+
+Sometimes [[computer-software]] will need to store a **UUID**.
+
+Maybe within a file.
+Maybe within a database.
+Maybe within a variable in memory.
+Etc.
+
+There are //better// and //worse// ways of storing a **UUID**, in terms of the amount of storage space used.
+
+Some will, for example, naively store the **UUID**:
+
+ea35427e-c39f-11ec-9d64-0242ac120002
+
+As this:
+
+	65 61 33 35 34 32 37 65
+	2d 63 33 39 66 2d 31 31
+	65 63 2d 39 64 36 34 2d
+	30 32 34 32 61 63 31 32
+	30 30 30 32
+
+But it would be much better to store it as:
+
+	ea 35 42 7e c3 9f 11 ec
+	9d 64 02 42 ac 12 00 02
+
+In terms of storage space, the latter is //better// than the former (since the latter uses less storage space).
+
+(Notice that the pieces of the latter representation looks like the **UUID**.)
+
+Let's dig into this to better understand it.
+
+The //naive// way to store a **UUID** is to store it as a //string//.
+In many programming-languages, this would be written as:
+
+	"ea35427e-c39f-11ec-9d64-0242ac120002"
+
+At first, this looks reasonable.
+But, this is //not// a desirable way of storing a **UUIID**, in terms of storage space.
+
+(Ignoring possible null-terminators and length-prefixes) this is (roughly) equivalent to this **array**:
+
+	[36]byte{
+		byte('e'), byte('a'), byte('3'), byte('5'), byte('4'), byte('2'), byte('7'), byte('e'),
+		byte('-'), byte('c'), byte('3'), byte('9'), byte('f'), byte('-'), byte('1'), byte('1'),
+		byte('e'), byte('c'), byte('-'), byte('9'), byte('d'), byte('6'), byte('4'), byte('-'),
+		byte('0'), byte('2'), byte('4'), byte('2'), byte('a'), byte('c'), byte('1'), byte('2'),
+		byte('0'), byte('0'), byte('0'), byte('2'),
+	}
+
+Which is the same as this (equivalent) **array**:
+
+	[36]byte{
+		0x65, 0x61, 0x33, 0x35, 0x34, 0x32, 0x37, 0x65,
+		0x2d, 0x63, 0x33, 0x39, 0x66, 0x2d, 0x31, 0x31,
+		0x65, 0x63, 0x2d, 0x39, 0x64, 0x36, 0x34, 0x2d,
+		0x30, 0x32, 0x34, 0x32, 0x61, 0x63, 0x31, 0x32,
+		0x30, 0x30, 0x30, 0x32,
+	}
+
+Or (as we saw before) is:
+
+	65 61 33 35 34 32 37 65
+	2d 63 33 39 66 2d 31 31
+	65 63 2d 39 64 36 34 2d
+	30 32 34 32 61 63 31 32
+	30 30 30 32
+
+This is using **36 bytes** to store **16 bytes** of data!
+
+Why is this happening‽ — the problem is that when a **UUID** literal is stored as a **string** it is //implicitly// encoding the **UUID** in [[ascii]] / [[unicode]] [[utf-8]].
+
+How can we do better‽ — we don't do this (implicy) encoding of the **UUID** in [[ascii]] / [[unicode]] [[utf-8]].
+
+Conceptually, think of it this way —
+
+Take the **UUID**:
+
+	ea35427e-c39f-11ec-9d64-0242ac120002
+
+Discard the hyphens:
+
+	ea35427ec39f11ec9d640242ac120002
+
+Separate it into bytes:
+
+	ea 35 42 7e c3 9f 11 ec 9d 64 02 42 ac 12 00 02
+
+As an **array** in a programming-language, this series of bytes is this **array**:
+
+	[16]byte{
+		0xea, 0x35, 0x42, 0x7e, 0xc3, 0x9f, 0x11, 0xec,
+		0x9d, 0x64, 0x02, 0x42, 0xac, 0x12, 0x00, 0x02,
+	}
+
+Notice how much shorter this **array** is.
+Also notice that the bytes in this **array** as just //pairs of characters// from the **UUID**.
+
+For completeness, the **array** is this:
+
+	ea 35 42 7e c3 9f 11 ec
+	9d 64 02 42 ac 12 00 02
+
+This is a (relatively) //better// way of storing a **UUID**, in terms of storage space.
+
+Just to //drive-this-point-home//, here are more examples —
+
+In the following table you can compare each of the example **UUID**s, with their hexadecimal equivalent, and then compare that to the 16 bytes that they are made of.
+
+	┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+	┃                                      ┃                                     ┃                                  byte number                                  ┃
+	┃ universally unique identifier (UUID) ┃ hexadecimal (i.e., hyphens removed) ┣━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┳━━━━┫
+	┃                                      ┃                                     ┃  0 ┃  1 ┃  2 ┃  3 ┃  4 ┃  5 ┃  6 ┃  7 ┃  8 ┃  9 ┃ 10 ┃ 11 ┃ 12 ┃ 13 ┃ 14 ┃ 15 ┃
+	┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━╇━━━━┩
+	│ 31905b9b-b1fa-4086-bcb9-bda8502a0958 │    31905b9bb1fa4086bcb9bda8502a0958 │ 31 │ 90 │ 5b │ 9b │ b1 │ fa │ 40 │ 86 │ bc │ b9 │ bd │ a8 │ 50 │ 2a │ 09 │ 58 │
+	├──────────────────────────────────────┼─────────────────────────────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+	│ 19077f38-5498-46a6-844d-f494086b8ca1 │    19077f38549846a6844df494086b8ca1 │ 19 │ 07 │ 7f │ 38 │ 54 │ 98 │ 46 │ a6 │ 84 │ 4d │ f4 │ 94 │ 08 │ 6b │ 8c │ a1 │
+	├──────────────────────────────────────┼─────────────────────────────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+	│ e50c17c0-c9b0-11ec-9d64-0242ac120002 │    e50c17c0c9b011ec9d640242ac120002 │ e5 │ 0c │ 17 │ c0 │ c9 │ b0 │ 11 │ ec │ 9d │ 64 │ 02 │ 42 │ ac │ 12 │ 00 │ 02 │
+	├──────────────────────────────────────┼─────────────────────────────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+	│ 49b1ca0e-d78f-55f3-8d58-197bac044ebb │    49b1ca0ed78f55f38d58197bac044ebb │ 49 │ b1 │ ca │ 0e │ d7 │ 8f │ 55 │ f3 │ 8d │ 58 │ 19 │ 7b │ ac │ 04 │ 4e │ bb │
+	├──────────────────────────────────────┼─────────────────────────────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+	│ c8f0d7ec-9987-9f17-a7a4-a57f3318fb0e │    c8f0d7ec99879f17a7a4a57f3318fb0e │ c8 │ f0 │ d7 │ ec │ 99 │ 87 │ 9f │ 17 │ a7 │ a4 │ a5 │ 7f │ 33 │ 18 │ fb │ 0e │
+	└──────────────────────────────────────┴─────────────────────────────────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+
+§§ UUID Guide
+
+For a deeper understanding of **UUID**s, please see the [[uuid/guide]].
