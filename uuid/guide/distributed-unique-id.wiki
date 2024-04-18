@@ -1,0 +1,25 @@
+wiki/1
+
+§ Distributed Unique ID
+
+⸺ by Charles Iliya Krempeaux
+
+⸺ up [[uuid/guide]]
+
+⸺ previous [[uuid/guide/centralized-unique-id]]
+
+⸺ next [[uuid/guide/bit-meaning]]
+
+There are two main strategies for creating a **unique identifier** (**unique ID**):
+
+• distributed, and
+• centralized.
+
+There are also some strategies that are some form of hybrid between the two.
+
+Some examples of **unique ID**s created using a **distributed** strategy are:
+
+• [[pseudo-random-number]]s chosen from a large-enough bit-space,
+• [[chrono-random-number]]s,
+• [[xim-id]]s,
+• UUID of type **version**=`4` and **variant**=`10`.
