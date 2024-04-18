@@ -1,0 +1,128 @@
+wiki/1
+
+§ uuid guide
+
+⸺ by Charles Iliya Krempeaux
+
+This guide will help you gain a deeper understanding of [[uuid]]s.
+
+⚠️ Note that I feel that there are better conventions for creating distributed **unique ID**s than **UUID**s (for reasons that will hopefully become more obvious as you continue to read).
+But nevertheless, you will very likely come across **UUID**s, and it would be to your benefit to understand them.
+
+§§ Table of Contents
+
+§§§ Overview
+
+1. [[uuid/guide/introduction]]
+2. [[uuid/guide/usages]]
+3. [[uuid/guide/semiotics]]
+4. [[uuid/guide/unique-id]]
+5. [[uuid/guide/unique-id-examples]]
+6. [[uuid/guide/centralized-unique-id]]
+7. [[uuid/guide/distributed-unique-id]]
+8. [[uuid/guide/bit-meaing]]
+9. [[uuid/guide/version]]
+10. [[uuid/guide/variant]]
+11. [[uuid/guide/random]]
+
+§§§ Questions
+
+12. [[uuid/guide/questions-1]]
+
+§§§ Programming
+
+13. Generating
+14. [[uuid/guide/git-repository]]
+15. [[uuid/guide/type]]
+16. [[uuid/guide/function-construct]] ``uuid.Construct()``
+17. [[uuid/guide/function-construct-unit-tests]]
+18. [[uuid/guide/method-string]] ``fmt.Stringer``
+19. [[uuid/guide/method-string-unit-tests]]
+20. [uuid.Random()[[uuid/guide/function-random]] ``uuid.Random()``
+21. [[uuid/guide/function-random-unit-tests]]
+
+§§§ Project
+
+22. [[uuid/guide/program-uuid]]
+
+§§§ Overview
+
+23. [[uuid/guide/chrono-random]]
+24. [[uuid/guide/chrono-random-example-string]]
+25. [[uuid/guide/chrono-random-example-binary]]
+26. [[uuid/guide/chrono-random-uuid]]
+
+§§§ Questions
+
+27. [[uuid/guide/questions-2]]
+
+§§§ Programming
+
+28. [[uuid/guide/function-chronorandom]] ``uuid.ChronoRandom()``
+29. [[uuid/guide/function-chronorandom-unit-tests]]
+
+§§§ Project
+
+30. uuid Program (chrono random)
+
+§§§ Overview
+
+31. [[uuid/guide/binary]]
+
+§§§ Programming
+
+32. encoding.BinaryMarshaler
+33. Unit Tests for encoding.BinaryMarshaler
+34. encoding.BinaryUnmarshaler
+35. Unit Tests for encoding.BinaryUnmarshaler
+
+§§§ Project
+
+36. uuid Program (binary)
+
+§§§ Overview
+
+37. Binary-To-Text Encoding
+
+§§§ Programming
+
+38. encoding.TextMarshaler
+39. Unit Tests for encoding.Textmarshaler
+40. encoding.TextUnmarshaler
+41. Unit Tests for encoding.TextUnmarshaler
+
+Project
+
+42. JSON
+
+Overview
+
+43. Parsing
+
+Programming
+
+44. uuid.Parse()
+45. Unit Tests for uuid.Parse()
+
+Project
+
+46. uuid Program
+
+## Postamble
+
+The purpose of this **guide** is to keep this **knowledge alive**.
+
+To pass on an **understanding** sufficient for others, such as yourself, to be able to **implement** this themselves from-scratch — without making use of any previous implementations of it.
+
+And to get others, such as yourself, to **implement** this themselves.
+
+I think it is important for our **culture** that, as long as this is useful, not only does this (and other) knowledge stay as **living knowledge**, but that the ability to and practice of **re-creating it again**, without making use of any previous implementations of it, stays alive too.
+
+To keep this alive, each generation needs to re-create it themselves, and use that implementation.
+
+Create your own implementation of this.
+Use your implementation.
+
+This is how we can create a culture around this and other knowledge.
+This is how we can create a tradition around this and other knowledge.
+This is how we can create an institution around this and other knowledge.
