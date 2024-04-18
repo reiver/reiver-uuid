@@ -1,22 +1,28 @@
-# Centralized Unique ID ([UUID Guide](../../README.md))
+wiki/1
 
-by [Charles Iliya Krempeaux](http://changelog.ca/)
+§ Centralized Unique ID
 
----
+⸺ by Charles Iliya Krempeaux
+
+⸺ up [[uuid/guide]]
+
+⸺ previous [[uuid/guide/unique-id]]
+
+⸺ next [[uuid/guide/centralized-unique-id]]
 
 There are two main strategies for creating a **unique identifier** (**unique ID**):
 
-* distributed, and
-* centralized.
+• distributed, and
+• centralized.
 
-There are also some strategies that are some form of hybrid between the two.
+There are also some strategies that are //some form of// hybrid between the two.
 
 Some examples of **unique-ID**s created using a **centralized** registry are:
 
-* IETF RFC numbers,
-* URL shortener **ID**s (under a specific Internet domain name),
-* the Internet domain name system (if you include time),
-* phone numbers (if you include time).
+• IETF RFC numbers,
+• URL shortener **ID**s (under a specific Internet domain name),
+• the Internet domain name system (if you include time),
+• phone numbers (if you include time).
 
 They can sometimes work.
 
@@ -27,14 +33,14 @@ For example — your **unique ID** can be taken from you, or censored, etc.
 
 (This has happened with **Internet domain names** a number of times!)
 
-And in many contexts this _major problem_ with **centralized** **unique ID**s makes them completely unacceptable to be used.
+And in many contexts this //major problem// with **centralized** **unique ID**s makes them completely unacceptable to be used.
 
-## UUID
+§§ UUID
 
-**UUID**s, in general, are _NOT_ centralized.
+**UUID**s, in general, are //NOT// centralized.
 
-**UUID**s, in general, are either _distributed_, or a _hybrid_.
+**UUID**s, in general, are either //distributed//, or a //hybrid//.
 
-One of the design goals of **UUID** was for them to be able to be created in a _distributed_ manner.
+One of the design goals of **UUID** was for them to be able to be created in a //distributed// manner.
 
-And with **UUID**s of type **version**=`4` and **variant**=`10` it is possible to create **UUID**s in a completely **distributed** manner.
+And with **UUID**s of type **version**=``4`` and **variant**=``10`` it is possible to create **UUID**s in a completely **distributed** manner.
