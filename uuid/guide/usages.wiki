@@ -1,14 +1,20 @@
 wiki/1
 
-§ Usages [[uuid/guide]]
+§ UUID Usages
 
 ⸺ by Charles Iliya Krempeaux
+
+⸺ up [[uuid/guide]]
+
+⸺ previous [[uuid/guide/introduction]]
+
+⸺ next [[uuid/guide/semiotics]]
 
 People use **UUID**s for all sorts of things.
 
 §§ Nicknames
 
-But most of these uses involves a computer using a [[UUID]] as a type of globally unique **nickname** for something.
+But most of these uses involves a computer using a [[uuid]] as a type of globally unique **nickname** for something.
 
 So, for example, imagine that on my phone I have an application that stores and manages my contacts.
 Maybe this is what is in my contact list:
